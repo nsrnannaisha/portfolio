@@ -1,0 +1,538 @@
+.page {
+  --green: #1b7f5a;
+  --grey: #6b7280;
+  --light-grey: #d6d6d6;
+  --test-black: #0e0e0f;
+  --white: #ffffff;
+  --color: #2ea26f;
+
+  position: relative;
+  width: 100%;
+  min-height: 2350px;
+  background: var(--white);
+  overflow: hidden;
+  color: #111827;
+  font-family: var(--font-inter), sans-serif;
+}
+
+.header {
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 100px;
+  background: var(--white);
+  border-bottom: 1.5px solid #d4d4d4;
+}
+
+.brand {
+  position: absolute;
+  left: 80px;
+  top: 23px;
+  color: var(--green);
+  font-family: var(--font-tac-one), cursive;
+  font-size: 3rem;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 0.35px currentColor;
+}
+
+.nav {
+  position: absolute;
+  right: 260px;
+  top: 39px;
+  display: flex;
+  gap: 62px;
+  color: var(--grey);
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.contactBtn {
+  position: absolute;
+  right: 80px;
+  top: 26px;
+  width: 144px;
+  height: 48px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--test-black);
+  color: var(--white);
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.hero {
+  position: absolute;
+  left: 80px;
+  top: 180px;
+  width: 1284px;
+  height: 468px;
+}
+
+.heroCopy {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 740px;
+}
+
+.name {
+  margin: 0;
+  font-family: var(--font-syne), sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.subtitle {
+  margin: 14px 0 0;
+  color: var(--green);
+  font-family: var(--font-syne), sans-serif;
+  font-size: 2rem;
+  line-height: 1.25;
+}
+
+.description {
+  margin: 30px 0 0;
+  color: var(--grey);
+  font-size: 1rem;
+  line-height: 1.7;
+  width: 741px;
+}
+
+.schoolBlock {
+  margin-top: 27px;
+}
+
+.school {
+  margin: 0;
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.faculty,
+.year,
+.scroll {
+  margin: 6px 0 0;
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 0.75rem;
+}
+
+.year {
+  color: rgba(63, 63, 70, 0.5);
+}
+
+.scroll {
+  margin-top: 128px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.socialRow,
+.socialRowBottom {
+  display: flex;
+  gap: 12px;
+}
+
+.socialRow {
+  margin-top: 8px;
+}
+
+.socialRowBottom {
+  margin-top: 18px;
+}
+
+.socialIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  outline: 1.33px solid #e5e7eb;
+  position: relative;
+}
+
+.socialGlyph {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 16px;
+  height: 16px;
+  background: var(--grey);
+}
+
+.ig {
+  border-radius: 50%;
+}
+
+.fb {
+  clip-path: inset(0 40% 0 40%);
+}
+
+.yt {
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+.heroVisual {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 378px;
+  height: 468px;
+}
+
+.photoPlaceholder {
+  position: absolute;
+  left: 199px;
+  top: 19px;
+  width: 290px;
+  height: 356px;
+  border-radius: 10px;
+  background: transparent;
+}
+
+.cardShadow {
+  position: absolute;
+  left: 187px;
+  top: 306px;
+  width: 288px;
+  height: 112px;
+  border-radius: 10px;
+  background: #737373;
+}
+
+.section {
+  position: absolute;
+  left: 80px;
+  top: 869px;
+  width: 1284px;
+}
+
+.sectionLabel,
+.contactLabel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--green);
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.sectionLabel::before,
+.contactLabel::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 2px;
+  background: var(--green);
+}
+
+.timeline {
+  position: relative;
+  margin-top: 36px;
+  padding-left: 64px;
+  min-height: 620px;
+}
+
+.timelineLine {
+  position: absolute;
+  left: 22px;
+  top: 5px;
+  width: 1px;
+  height: 620px;
+  background: #e5e7eb;
+}
+
+.timelineItem {
+  position: relative;
+  margin-bottom: 40px;
+  min-height: 120px;
+}
+
+.experienceDate {
+  color: #a3a3a3;
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 0.75rem;
+}
+
+.experienceTitle {
+  margin: 10px 0 0;
+  color: #111827;
+  font-family: var(--font-syne), sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.experienceRole {
+  margin: 8px 0 0;
+  color: var(--green);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.experienceDesc {
+  margin: 10px 0 0;
+  color: #737373;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.skillsSection {
+  position: absolute;
+  left: 80px;
+  top: 1688px;
+  width: 1278px;
+  min-height: 200px;
+}
+
+.skillsNav {
+  position: relative;
+  margin-top: 22px;
+  display: flex;
+  gap: 28px;
+  border-bottom: 1px solid var(--grey);
+  padding-bottom: 10px;
+  overflow-x: auto;
+}
+
+.skillsTab {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  color: var(--grey);
+  font-family: var(--font-syne), sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.skillsTabActive {
+  color: var(--green);
+  font-weight: 600;
+  position: relative;
+}
+
+.skillsTabActive::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -12px;
+  height: 3px;
+  background: var(--green);
+  border-radius: 999px;
+}
+
+.skillsPanel {
+  margin-top: 20px;
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.skillCard {
+  min-width: 128px;
+  padding: 12px 16px;
+  border: 1px solid #c7c7c7;
+  border-radius: 10px;
+  background: #fff;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  gap: 4px;
+}
+
+.skillCardTitle {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.skillCardAccent {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 0.75rem;
+  color: #a3a3a3;
+}
+
+.contactSection {
+  position: absolute;
+  left: 80px;
+  top: 2068px;
+  width: 1280px;
+  height: 220px;
+  background: var(--test-black);
+}
+
+.contactHeader {
+  position: absolute;
+  left: 28px;
+  top: 24px;
+  width: 440px;
+  color: var(--white);
+}
+
+.contactHeader h2 {
+  margin: 16px 0 0;
+  font-family: var(--font-syne), sans-serif;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.contactHeader p {
+  margin: 10px 0 0;
+  width: 430px;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.email {
+  display: inline-block;
+  margin-top: 24px;
+  color: var(--color);
+  font-family: var(--font-syne), sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.contactForm,
+.formGrid,
+.sendBtn {
+  display: none;
+}
+
+@media (max-width: 1440px) {
+  .header,
+  .hero,
+  .section,
+  .skillsSection,
+  .contactSection {
+    left: clamp(20px, 5vw, 80px);
+    width: calc(100% - clamp(40px, 10vw, 160px));
+  }
+
+  .nav {
+    right: clamp(220px, 18vw, 260px);
+    gap: clamp(24px, 4vw, 62px);
+  }
+}
+
+@media (max-width: 1100px) {
+  .header {
+    height: auto;
+    padding-bottom: 16px;
+  }
+
+  .brand {
+    position: static;
+    margin: 24px 0 0 24px;
+    font-size: 2.5rem;
+  }
+
+  .nav {
+    position: static;
+    margin: 12px 24px 0;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 18px;
+    font-size: 1rem;
+  }
+
+  .contactBtn {
+    position: static;
+    margin: 16px 24px 0;
+    width: 128px;
+    height: 42px;
+    font-size: 1rem;
+  }
+
+  .hero,
+  .section,
+  .skillsSection,
+  .contactSection {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: auto;
+    margin: 0 24px;
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-top: 44px;
+  }
+
+  .heroCopy,
+  .heroVisual {
+    position: relative;
+    width: 100%;
+  }
+
+  .heroCopy {
+    width: 100%;
+  }
+
+  .description,
+  .schoolBlock {
+    width: 100%;
+  }
+
+  .photoPlaceholder {
+    left: auto;
+    top: auto;
+    width: min(290px, 100%);
+  }
+
+  .cardShadow {
+    left: 0;
+    top: 240px;
+    width: min(288px, 100%);
+  }
+
+  .skillsPanel {
+    gap: 16px;
+  }
+
+  .contactHeader {
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .page {
+    overflow-x: hidden;
+  }
+
+  .socialRow,
+  .socialRowBottom {
+    gap: 10px;
+  }
+
+  .skillCard {
+    min-width: 140px;
+  }
+
+  .contactHeader h2,
+  .contactHeader p,
+  .email {
+    max-width: 100%;
+  }
+
+  .experienceDesc,
+  .description,
+  .contactHeader p {
+    font-size: 0.95rem;
+  }
+}

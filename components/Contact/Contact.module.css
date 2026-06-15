@@ -1,0 +1,29 @@
+.contact {
+  padding: 120px 80px;
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  background: #f7f7f7;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form input,
+.form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.form button {
+  background: black;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
