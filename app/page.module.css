@@ -8,7 +8,7 @@
 
   position: relative;
   width: 100%;
-  min-height: 2350px;
+  min-height: 100vh;
   background: var(--white);
   overflow: hidden;
   color: #111827;
@@ -25,7 +25,7 @@
 
 .brand {
   position: absolute;
-  left: 80px;
+  left: 45px;
   top: 23px;
   color: var(--green);
   font-family: var(--font-tac-one), cursive;
@@ -38,20 +38,21 @@
 
 .nav {
   position: absolute;
-  right: 260px;
-  top: 39px;
+  left: 50%;
+  top: 40px;
   display: flex;
-  gap: 62px;
+  gap: 40px;
   color: var(--grey);
   font-family: var(--font-jetbrains-mono), monospace;
-  font-size: 1.25rem;
+  font-size: 1.05rem;
   font-weight: 700;
   letter-spacing: 0.08em;
+  transform: translateX(-50%);
 }
 
 .contactBtn {
   position: absolute;
-  right: 80px;
+  right: 45px;
   top: 26px;
   width: 144px;
   height: 48px;
@@ -66,17 +67,16 @@
 }
 
 .hero {
-  position: absolute;
-  left: 80px;
-  top: 180px;
-  width: 1284px;
-  height: 468px;
+  position: relative;
+  width: calc(100% - 160px);
+  margin: 0 45px 0;
+  min-height: 468px;
 }
 
 .heroCopy {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 130px;
   width: 740px;
 }
 
@@ -205,10 +205,9 @@
 }
 
 .section {
-  position: absolute;
-  left: 80px;
-  top: 869px;
-  width: 1284px;
+  position: relative;
+  width: calc(100% - 160px);
+  margin: 104px 45px 0;
 }
 
 .sectionLabel,
@@ -283,11 +282,134 @@
 }
 
 .skillsSection {
-  position: absolute;
-  left: 80px;
-  top: 1688px;
-  width: 1278px;
+  position: relative;
+  width: calc(100% - 160px);
+  margin: 104px 45px 0;
   min-height: 200px;
+}
+
+.projectsSection {
+  position: relative;
+  width: calc(100% - 160px);
+  margin: 104px 45px 0;
+}
+
+.projectsTitle {
+  margin: 6px 0 0;
+  color: #111827;
+  font-family: var(--font-syne), sans-serif;
+  font-size: clamp(2.4rem, 4vw, 4.2rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.projectsGrid {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px 30px;
+}
+
+.projectCard {
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+}
+
+.projectThumb {
+  height: 186px;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  color: #fff;
+  text-align: center;
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.projectThumbBlue {
+  background: linear-gradient(135deg, #d7e7ff 0%, #8bb7ff 100%);
+  color: #0f172a;
+}
+
+.projectThumbGreen {
+  background: linear-gradient(135deg, #d6f4d9 0%, #65a30d 100%);
+  color: #06240d;
+}
+
+.projectThumbDark {
+  background: linear-gradient(135deg, #0f0f10 0%, #27272a 100%);
+}
+
+.projectThumbForest {
+  background: linear-gradient(135deg, #0b1f11 0%, #3f6f1d 100%);
+}
+
+.projectThumbOrange {
+  background: linear-gradient(135deg, #f6d38f 0%, #ea9a2b 100%);
+  color: #3b1f00;
+}
+
+.projectThumbBlack {
+  background: linear-gradient(135deg, #080808 0%, #1f1f1f 100%);
+}
+
+.projectThumbText {
+  max-width: 80%;
+  opacity: 0.9;
+  line-height: 1.35;
+}
+
+.projectTags {
+  padding: 14px 16px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.projectTag {
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 4px 10px;
+  background: #f8fafc;
+  color: #7c7c7c;
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 0.7rem;
+}
+
+.projectName {
+  margin: 14px 16px 0;
+  font-family: var(--font-syne), sans-serif;
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.projectDesc {
+  margin: 12px 16px 0;
+  color: #5f6368;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  min-height: 78px;
+}
+
+.projectLinks {
+  padding: 0 16px 18px;
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.projectLinks a {
+  color: #0f172a;
+  font-family: var(--font-syne), sans-serif;
+  font-size: 0.95rem;
+  font-weight: 800;
+  text-decoration: underline;
 }
 
 .skillsNav {
@@ -363,10 +485,11 @@
 }
 
 .contactSection {
-  position: absolute;
-  left: 80px;
-  top: 2068px;
-  width: 1280px;
+  position: relative;
+  left: auto;
+  top: auto;
+  width: 100%;
+  margin: 104px 0 0;
   height: 220px;
   background: var(--test-black);
 }
@@ -414,9 +537,10 @@
   .hero,
   .section,
   .skillsSection,
-  .contactSection {
-    left: clamp(20px, 5vw, 80px);
-    width: calc(100% - clamp(40px, 10vw, 160px));
+  .projectsSection,
+  .awardsSection {
+    left: clamp(45px, 5vw, 45px);
+    width: calc(100% - 160px);
   }
 
   .nav {
@@ -433,13 +557,13 @@
 
   .brand {
     position: static;
-    margin: 24px 0 0 24px;
+    margin: 20px 0 0 45px;
     font-size: 2.5rem;
   }
 
   .nav {
     position: static;
-    margin: 12px 24px 0;
+    margin: 12px 45px 0;
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 18px;
@@ -448,7 +572,7 @@
 
   .contactBtn {
     position: static;
-    margin: 16px 24px 0;
+    margin: 16px 45px 0;
     width: 128px;
     height: 42px;
     font-size: 1rem;
@@ -457,19 +581,36 @@
   .hero,
   .section,
   .skillsSection,
+  .projectsSection,
+  .awardsSection,
   .contactSection {
     position: relative;
     left: auto;
     top: auto;
+  }
+
+  .hero {
     width: auto;
-    margin: 0 24px;
+    margin: 40px 45px 0;
+  }
+
+  .section,
+  .skillsSection,
+  .projectsSection,
+  .awardsSection {
+    width: auto;
+    margin: 0 45px;
+  }
+
+  .contactSection {
+    width: 100%;
+    margin: 45px 0 0;
   }
 
   .hero {
     display: grid;
     grid-template-columns: 1fr;
     gap: 32px;
-    margin-top: 44px;
   }
 
   .heroCopy,
@@ -504,9 +645,29 @@
   }
 
   .contactHeader {
-    left: 0;
-    top: 0;
-    width: 100%;
+    left: 45px;
+    top: 24px;
+    width: calc(100% - 160px);
+  }
+
+  .projectsSection {
+    margin: 72px 45px 0;
+  }
+
+  .awardsSection {
+    margin: 72px 45px 0;
+  }
+
+  .awardCard {
+    max-width: 100%;
+  }
+
+  .projectsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .awardsGrid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -522,6 +683,33 @@
 
   .skillCard {
     min-width: 140px;
+  }
+
+  .projectsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .awardsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .awardBanner {
+    min-height: 220px;
+    padding: 20px;
+  }
+
+  .awardFaces {
+    height: 130px;
+    gap: 10px;
+  }
+
+  .awardBadge {
+    font-size: 1.1rem;
+    padding: 8px 14px;
+  }
+
+  .awardTitle {
+    font-size: 1.5rem;
   }
 
   .contactHeader h2,
