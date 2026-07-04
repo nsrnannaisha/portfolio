@@ -158,6 +158,16 @@ const projects = [
   },
 ];
 
+const awards = [
+  {
+    title: "Best team",
+    tags: ["Data Science"],
+    desc: "ISE! Academy: Data Science for Business 2025",
+    thumbClass: styles.projectThumbBlue,
+    thumbText: "Picture",
+  },
+];
+
 export default function Home() {
   const [activeSkillTab, setActiveSkillTab] = useState<(typeof skillTabs)[number]>("Soft Skills");
 
@@ -262,6 +272,29 @@ export default function Home() {
                   </a>
                 ))}
               </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      {/* Awards */}
+      <section className={styles.projectsSection}>
+        <div className={styles.sectionLabel}>Awards</div>
+        <div className={styles.projectsGrid}>
+          {awards.map((project) => (
+            <article className={styles.projectCard} key={project.title}>
+              <div className={`${styles.projectThumb} ${project.thumbClass}`}>
+                <div className={styles.projectThumbText}>{project.thumbText}</div>
+              </div>
+              <div className={styles.projectTags}>
+                {project.tags.map((tag) => (
+                  <span className={styles.projectTag} key={tag}>
+                    {tag}
+                  </span>
+                ))}
+              </div>
+              <h3 className={styles.projectName}>{project.title}</h3>
+              <p className={styles.projectDesc}>{project.desc}</p>
             </article>
           ))}
         </div>
