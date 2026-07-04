@@ -1,4 +1,5 @@
 import styles from "./Hero.module.css";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -16,6 +17,17 @@ export default function Hero() {
           <p className={styles.school}>Universitas Indonesia</p>
           <p className={styles.faculty}>Faculty of Computer Science | Bachelor of Computer Science</p>
           <p className={styles.year}>2023 - 2027</p>
+        </div>
+      </div>
+      <div className={styles.heroVisual}>
+        <div className={styles.cardShadow}></div>
+        <div className={styles.photoPlaceholder}>
+          <Image
+            src="/img/pas_foto.jpeg"
+            alt="Nisrina Annaisha Sarnadi"
+            fill
+            style={{ objectFit: 'cover', borderRadius: '10px' }}
+          />
         </div>
       </div>
     </section>

@@ -8,7 +8,7 @@ const projects = [
     desc: "Preventive yudisium calculator to help students monitor graduation eligibility.",
     thumbClass: styles.projectThumbBlue,
     thumbText: "Dashboard preview",
-    links: [{ label: "Live Demo", href: "#" }],
+    links: [{ label: "Live Demo", href: "https://kayu.ppl.cs.ui.ac.id/" }],
   },
   {
     title: "Sizopi",
@@ -17,8 +17,8 @@ const projects = [
     thumbClass: styles.projectThumbGreen,
     thumbText: "Reservation list",
     links: [
-      { label: "Live Demo", href: "#" },
-      { label: "GitHub", href: "#" },
+      { label: "Live Demo", href: "https://sizopi-jet.vercel.app/" },
+      { label: "GitHub", href: "https://github.com/Sizopi-C6/sizopi" },
     ],
   },
   {
@@ -27,7 +27,7 @@ const projects = [
     desc: "Mobile and web food discovery for finding local food recommendations in Surabaya.",
     thumbClass: styles.projectThumbDark,
     thumbText: "App cannot be accessed due to inactive domain",
-    links: [{ label: "GitHub", href: "#" }],
+    links: [{ label: "GitHub", href: "https://github.com/PBP-F10" }],
   },
   {
     title: "Escape The Wolf",
@@ -36,8 +36,8 @@ const projects = [
     thumbClass: styles.projectThumbForest,
     thumbText: "Escape the Wolf",
     links: [
-      { label: "Live Demo", href: "#" },
-      { label: "GitHub", href: "#" },
+      { label: "Live Demo", href: "https://chellins.itch.io/escape-the-wolf" },
+      { label: "GitHub", href: "https://github.com/GD-Cupcake/EscapeTheWolf" },
     ],
   },
   {
@@ -47,8 +47,8 @@ const projects = [
     thumbClass: styles.projectThumbOrange,
     thumbText: "Arden's Oath",
     links: [
-      { label: "Live Demo", href: "#" },
-      { label: "GitHub", href: "#" },
+      { label: "Live Demo", href: "https://nsrnannaisha.itch.io/ardens-oath" },
+      { label: "GitHub", href: "https://github.com/nsrnannaisha/gamejam-gamedev" },
     ],
   },
   {
@@ -57,7 +57,7 @@ const projects = [
     desc: "Prototype design of mobile platform that connects UMKM food vendors and customers.",
     thumbClass: styles.projectThumbBlack,
     thumbText: "Mobile screens",
-    links: [{ label: "Live Demo", href: "#" }],
+    links: [{ label: "Live Demo", href: "https://www.figma.com/proto/UNHzQnm1R1seTINqMQVZN8/TK-Sister?node-id=196-203&p=f&t=vueJSHxAzzGob1BI-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=196%3A203&show-proto-sidebar=1" }],
   },
   {
     title: "Tanam.in",
@@ -65,7 +65,7 @@ const projects = [
     desc: "Prototype design of mobile platform that encourages people to grow plants at home and adopt plants from urban forests.",
     thumbClass: styles.projectThumbBlack,
     thumbText: "Mobile screens",
-    links: [{ label: "Live Demo", href: "#" }],
+    links: [{ label: "Live Demo", href: "https://www.figma.com/proto/IJzPbYBQrVFJ7qXmWsMDCt/Tanam.in?node-id=99-73&p=f&t=7cxMMMyzgA0IUA92-1&scaling=scale-down&content-scaling=fixed&page-id=80%3A10&starting-point-node-id=1502%3A1985" }],
   },
   {
     title: "Lume",
@@ -73,7 +73,7 @@ const projects = [
     desc: "E-Commerce platform for makeup products, enabling users to browse products and make online purchases.",
     thumbClass: styles.projectThumbBlack,
     thumbText: "Mobile screens",
-    links: [{ label: "GitHub", href: "#" }],
+    links: [{ label: "GitHub", href: "https://github.com/PKPL-2025-51/lume" }],
   },
 ];
 

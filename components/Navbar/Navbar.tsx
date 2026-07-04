@@ -11,7 +11,6 @@ export default function Navbar() {
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
           <a href="#awards">Awards</a>
-          <a href="#contact">Contact</a>
         </nav>
         <a href="#contact" className={styles.contactBtn}>
           Contact
