@@ -1,0 +1,123 @@
+.projectsSection {
+  position: relative;
+  width: calc(100% - 160px);
+  margin: 104px 45px 0;
+}
+
+.projectsTitle {
+  margin: 6px 0 0;
+  color: #111827;
+  font-family: var(--font-syne), sans-serif;
+  font-size: clamp(2.4rem, 4vw, 4.2rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.projectsGrid {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px 30px;
+}
+
+.projectCard {
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+}
+
+.projectThumb {
+  height: 186px;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  color: #fff;
+  text-align: center;
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.projectThumbBlue {
+  background: linear-gradient(135deg, #d7e7ff 0%, #8bb7ff 100%);
+  color: #0f172a;
+}
+
+.projectThumbGreen {
+  background: linear-gradient(135deg, #d6f4d9 0%, #65a30d 100%);
+  color: #06240d;
+}
+
+.projectThumbDark {
+  background: linear-gradient(135deg, #0f0f10 0%, #27272a 100%);
+}
+
+.projectThumbForest {
+  background: linear-gradient(135deg, #0b1f11 0%, #3f6f1d 100%);
+}
+
+.projectThumbOrange {
+  background: linear-gradient(135deg, #f6d38f 0%, #ea9a2b 100%);
+  color: #3b1f00;
+}
+
+.projectThumbBlack {
+  background: linear-gradient(135deg, #080808 0%, #1f1f1f 100%);
+}
+
+.projectThumbText {
+  max-width: 80%;
+  opacity: 0.9;
+  line-height: 1.35;
+}
+
+.projectTags {
+  padding: 14px 16px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.projectTag {
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 4px 10px;
+  background: #f8fafc;
+  color: #7c7c7c;
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 0.7rem;
+}
+
+.projectName {
+  margin: 14px 16px 0;
+  font-family: var(--font-syne), sans-serif;
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.projectDesc {
+  margin: 12px 16px 0;
+  color: #5f6368;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  min-height: 78px;
+}
+
+.projectLinks {
+  padding: 0 16px 18px;
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.projectLinks a {
+  color: #0f172a;
+  font-family: var(--font-syne), sans-serif;
+  font-size: 0.95rem;
+  font-weight: 800;
+  text-decoration: underline;
+}

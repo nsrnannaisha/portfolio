@@ -1,37 +1,164 @@
 .hero {
-  padding: 120px 80px;
-  display: flex;
-  justify-content: space-between;
-  gap: 80px;
+  position: relative;
+  width: calc(100% - 160px);
+  margin: 0 45px 0;
+  min-height: 468px;
 }
 
-.text h1 {
-  font-family: Syne, sans-serif;
-  font-size: 40px;
+.heroCopy {
+  position: absolute;
+  left: 0;
+  top: 130px;
+  width: 740px;
+}
+
+.name {
+  margin: 0;
+  font-family: var(--font-syne), sans-serif;
+  font-size: 2.5rem;
   font-weight: 800;
+  line-height: 1.2;
 }
 
-.text h2 {
+.subtitle {
+  margin: 14px 0 0;
   color: var(--green);
-  font-weight: 400;
-  font-size: 32px;
+  font-family: var(--font-syne), sans-serif;
+  font-size: 2rem;
+  line-height: 1.25;
 }
 
-.text p {
-  max-width: 740px;
-  line-height: 1.8;
-  margin-top: 24px;
+.description {
+  margin: 30px 0 0;
+  color: var(--grey);
+  font-size: 1rem;
+  line-height: 1.7;
+  width: 741px;
 }
 
-.education {
-  margin-top: 24px;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 13px;
+.schoolBlock {
+  margin-top: 27px;
 }
 
-.image img {
+.school {
+  margin: 0;
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.faculty,
+.year,
+.scroll {
+  margin: 6px 0 0;
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 0.75rem;
+}
+
+.year {
+  color: rgba(63, 63, 70, 0.5);
+}
+
+.scroll {
+  margin-top: 128px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.socialRow,
+.socialRowBottom {
+  display: flex;
+  gap: 12px;
+}
+
+.socialRow {
+  margin-top: 8px;
+}
+
+.socialRowBottom {
+  margin-top: 18px;
+}
+
+.socialIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  outline: 1.33px solid #e5e7eb;
+  position: relative;
+}
+
+.socialGlyph {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 16px;
+  height: 16px;
+  background: var(--grey);
+}
+
+.ig {
+  border-radius: 50%;
+}
+
+.fb {
+  clip-path: inset(0 40% 0 40%);
+}
+
+.yt {
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+.heroVisual {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 378px;
+  height: 468px;
+}
+
+.photoPlaceholder {
+  position: absolute;
+  left: 199px;
+  top: 19px;
   width: 290px;
   height: 356px;
-  object-fit: cover;
   border-radius: 10px;
+  background: transparent;
+}
+
+.cardShadow {
+  position: absolute;
+  left: 187px;
+  top: 306px;
+  width: 288px;
+  height: 112px;
+  border-radius: 10px;
+  background: #737373;
+}
+
+.section {
+  position: relative;
+  width: calc(100% - 160px);
+  margin: 104px 45px 0;
+}
+
+.sectionLabel,
+.contactLabel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--green);
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.sectionLabel::before,
+.contactLabel::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 2px;
+  background: var(--green);
 }

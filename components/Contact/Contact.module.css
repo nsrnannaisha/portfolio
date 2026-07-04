@@ -1,29 +1,47 @@
-.contact {
-  padding: 120px 80px;
-  display: flex;
-  justify-content: space-between;
-  gap: 80px;
-  background: #f7f7f7;
+.contactSection {
+  position: relative;
+  left: auto;
+  top: auto;
+  width: 100%;
+  margin: 104px 0 0;
+  height: 220px;
+  background: var(--test-black);
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+.contactHeader {
+  position: absolute;
+  left: 28px;
+  top: 24px;
+  width: 440px;
+  color: var(--white);
 }
 
-.form input,
-.form textarea {
-  padding: 12px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+.contactHeader h2 {
+  margin: 16px 0 0;
+  font-family: var(--font-syne), sans-serif;
+  font-size: 1.25rem;
+  font-weight: 800;
 }
 
-.form button {
-  background: black;
-  color: white;
-  padding: 12px;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
+.contactHeader p {
+  margin: 10px 0 0;
+  width: 430px;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.email {
+  display: inline-block;
+  margin-top: 24px;
+  color: var(--color);
+  font-family: var(--font-syne), sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.contactForm,
+.formGrid,
+.sendBtn {
+  display: none;
 }

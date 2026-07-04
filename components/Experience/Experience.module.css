@@ -1,26 +1,49 @@
-.experience {
-  padding: 120px 80px;
-}
-
 .timeline {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+  position: relative;
+  margin-top: 36px;
+  padding-left: 64px;
+  min-height: 620px;
 }
 
-.item {
-  padding-left: 24px;
-  border-left: 2px solid #e4e4e4;
+.timelineLine {
+  position: absolute;
+  left: 22px;
+  top: 5px;
+  width: 1px;
+  height: 620px;
+  background: #e5e7eb;
 }
 
-.date {
-  font-family: "JetBrains Mono", monospace;
-  font-size: 12px;
-  color: #a1a1a1;
+.timelineItem {
+  position: relative;
+  margin-bottom: 40px;
+  min-height: 120px;
 }
 
-.place {
-  color: #058374;
+.experienceDate {
+  color: #a3a3a3;
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 0.75rem;
+}
+
+.experienceTitle {
+  margin: 10px 0 0;
+  color: #111827;
+  font-family: var(--font-syne), sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.experienceRole {
+  margin: 8px 0 0;
+  color: var(--green);
+  font-size: 0.875rem;
   font-weight: 500;
+}
+
+.experienceDesc {
+  margin: 10px 0 0;
+  color: #737373;
+  font-size: 0.875rem;
+  line-height: 1.6;
 }
