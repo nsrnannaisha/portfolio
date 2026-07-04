@@ -2,8 +2,8 @@ import styles from "./Contact.module.css";
 
 export default function Contact() {
   return (
-    <footer className={styles.contact}>
-      <section className={styles.contactSection}>
+    <footer id="contact" className={styles.contactSection}>
+      <div className={styles.contactContainer}>
         <div className={styles.contactHeader}>
           <div className={styles.contactLabel}>Contact</div>
           <h2>Let&apos;s work together!</h2>
@@ -12,7 +12,7 @@ export default function Contact() {
             nisrina.asarnadi@gmail.com
           </a>
         </div>
-      </section>
+      </div>
     </footer>
   );
 }

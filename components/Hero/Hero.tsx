@@ -2,7 +2,7 @@ import styles from "./Hero.module.css";
 
 export default function Hero() {
   return (
-    <section className={styles.hero}>
+    <section id="about" className={styles.hero}>
       <div className={styles.heroCopy}>
         <h1 className={styles.name}>Nisrina Annaisha Sarnadi</h1>
         <p className={styles.subtitle}>Computer Science Undergraduate Student</p>

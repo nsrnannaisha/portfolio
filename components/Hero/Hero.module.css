@@ -1,7 +1,8 @@
 .hero {
   position: relative;
-  width: calc(100% - 160px);
-  margin: 0 45px 0;
+  width: 90%;
+  max-width: 1120px;
+  margin: 0 auto 0;
   min-height: 468px;
 }
 
@@ -9,7 +10,8 @@
   position: absolute;
   left: 0;
   top: 130px;
-  width: 740px;
+  width: 100%;
+  max-width: 740px;
 }
 
 .name {
@@ -33,7 +35,8 @@
   color: var(--grey);
   font-size: 1rem;
   line-height: 1.7;
-  width: 741px;
+  width: 100%;
+  max-width: 741px;
 }
 
 .schoolBlock {

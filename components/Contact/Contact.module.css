@@ -1,18 +1,22 @@
 .contactSection {
-  position: relative;
-  left: auto;
-  top: auto;
   width: 100%;
   margin: 104px 0 0;
   height: 220px;
   background: var(--test-black);
 }
 
+.contactContainer {
+  position: relative;
+  width: 90%;
+  max-width: 1120px;
+  height: 100%;
+  margin: 0 auto;
+}
+
 .contactHeader {
   position: absolute;
-  left: 28px;
+  left: 0;
   top: 24px;
-  width: 440px;
   color: var(--white);
 }
 
@@ -25,7 +29,8 @@
 
 .contactHeader p {
   margin: 10px 0 0;
-  width: 430px;
+  width: auto;
+  white-space: nowrap;
   font-size: 1.05rem;
   line-height: 1.5;
 }

@@ -50,10 +50,10 @@ const skillContent: Record<
 
 
 export default function Skills() {
-  const [activeSkillTab, setActiveSkillTab] = useState<(typeof skillTabs)[number]>("Soft Skills");
+  const [activeSkillTab, setActiveSkillTab] = useState<(typeof skillTabs)[number]>("Hard Skills");
 
   return (
-    <section className={pageStyles.section}>
+    <section id="skills" className={pageStyles.section}>
       <div className={pageStyles.sectionLabel}>Skills</div>
       <div className={styles.skillsNav}>
         {skillTabs.map((tab) => (

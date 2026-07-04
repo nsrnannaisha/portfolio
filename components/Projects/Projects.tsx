@@ -79,7 +79,7 @@ const projects = [
 
 export default function Home() {
   return (
-    <section className={pageStyles.section}>
+    <section id="projects" className={pageStyles.section}>
         <div className={pageStyles.sectionLabel}>Projects</div>
         <h2 className={styles.projectsTitle}>My Best Works</h2>
         <div className={styles.projectsGrid}>

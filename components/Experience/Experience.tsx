@@ -30,7 +30,7 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section className={pageStyles.section}>
+    <section id="experiences" className={pageStyles.section}>
       <div className={pageStyles.sectionLabel}>Experiences</div>
       <div className={styles.timeline}>
         <div className={styles.timelineLine} />

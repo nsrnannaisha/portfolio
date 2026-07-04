@@ -12,7 +12,7 @@ const awards = [
 
 export default function Awards() {
   return (
-    <section className={pageStyles.section}>
+    <section id="awards" className={pageStyles.section}>
       <div className={pageStyles.sectionLabel}>Awards</div>
       <div className={styles.projectsGrid}>
         {awards.map((award, index) => (
