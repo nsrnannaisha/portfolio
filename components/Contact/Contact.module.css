@@ -1,46 +1,70 @@
 .contactSection {
   width: 100%;
   margin: 104px 0 0;
-  height: 220px;
+  padding: 48px 0;
   background: var(--test-black);
 }
 
 .contactContainer {
-  position: relative;
   width: 90%;
   max-width: 1120px;
-  height: 100%;
   margin: 0 auto;
 }
 
+.contactTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.contactLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--green);
+  font-family: var(--font-jetbrains-mono), monospace;
+  font-size: 1.25rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 12px;
+}
+
 .contactHeader {
-  position: absolute;
-  left: 0;
-  top: 24px;
   color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 760px;
 }
 
 .contactHeader h2 {
-  margin: 16px 0 0;
+  margin: 0;
   font-family: var(--font-syne), sans-serif;
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: 800;
 }
 
 .contactHeader p {
-  margin: 10px 0 0;
-  width: auto;
-  white-space: nowrap;
-  font-size: 1.05rem;
-  line-height: 1.5;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.8;
+  max-width: 760px;
 }
 
 .email {
   display: inline-block;
-  margin-top: 24px;
+  margin: 0;
   color: var(--color);
   font-family: var(--font-syne), sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 600;
   text-decoration: underline;
 }
@@ -49,4 +73,69 @@
 .formGrid,
 .sendBtn {
   display: none;
+}
+
+.socialLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 14px;
+  background: var(--white);
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 180ms ease, border-color 180ms ease;
+}
+
+.socialLink:hover {
+  transform: translateY(-1px);
+  border-color: var(--green);
+}
+
+.socialIconImage {
+  object-fit: contain;
+}
+
+.socialRow,
+.socialRowBottom {
+  display: flex;
+  gap: 12px;
+}
+
+.socialRow {
+  margin-top: 8px;
+}
+
+.socialRowBottom {
+  margin-top: 18px;
+}
+
+.socialIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  outline: 1.33px solid #e5e7eb;
+  position: relative;
+}
+
+.socialGlyph {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 16px;
+  height: 16px;
+  background: var(--grey);
+}
+
+.ig {
+  border-radius: 50%;
+}
+
+.fb {
+  clip-path: inset(0 40% 0 40%);
+}
+
+.yt {
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
 }

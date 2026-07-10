@@ -20,25 +20,12 @@ export default function Home() {
   return (
     <main className={`${styles.page} ${inter.variable} ${jetBrainsMono.variable} ${syne.variable} ${tacOne.variable}`}>
 
-      {/* Navbar */}
       <Navbar />
-
-      {/* Hero */}
       <Hero />
-
-      {/* Experiences */}
       <Experience />
-
-      {/* Skills */}
       <Skills />
-
-      {/* Projects */}
       <Projects />
-
-      {/* Awards */}
       <Awards />
-
-      {/* Contact */}
       <Contact />
 
     </main>
