@@ -1,12 +1,13 @@
 import styles from "./Awards.module.css";
 import pageStyles from "../../app/page.module.css";
+import iseImg from "../../img/ise.png";
 
 const awards = [
   {
+    img: iseImg,
     category: "Data Science",
     title: "Best Team",
     subtitle: "ISE! Academy: Data Science for Business 2025",
-    badge: "Sound Horeg Team",
   },
 ];
 
@@ -17,8 +18,14 @@ export default function Awards() {
       <div className={styles.projectsGrid}>
         {awards.map((award, index) => (
           <article className={styles.projectCard} key={award.title}>
-            <div className={`${styles.projectThumb} ${index % 2 === 0 ? styles.projectThumbBlue : styles.projectThumbGreen}`}>
-              <div className={styles.projectThumbText}>{award.badge}</div>
+            <div className={`${styles.projectThumb}`}>
+              {award.img ? (
+                <img
+                  src={typeof award.img === "string" ? award.img : award.img.src}
+                  alt={award.title}
+                  className={styles.projectThumbImg}
+                />
+              ) : null}
             </div>
             <div className={styles.projectTags}>
               <span className={styles.projectTag}>{award.category}</span>

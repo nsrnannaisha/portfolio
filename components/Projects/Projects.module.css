@@ -18,6 +18,7 @@
   margin-top: 28px;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
   gap: 28px 30px;
 }
 
@@ -27,6 +28,10 @@
   background: #fff;
   overflow: hidden;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  position: relative;
 }
 
 .projectThumb {
@@ -39,39 +44,29 @@
   font-family: var(--font-jetbrains-mono), monospace;
   font-size: 0.9rem;
   font-weight: 700;
+  position: relative;
+  overflow: hidden;
 }
 
-.projectThumbBlue {
-  background: linear-gradient(135deg, #d7e7ff 0%, #8bb7ff 100%);
-  color: #0f172a;
-}
-
-.projectThumbGreen {
-  background: linear-gradient(135deg, #d6f4d9 0%, #65a30d 100%);
-  color: #06240d;
-}
-
-.projectThumbDark {
-  background: linear-gradient(135deg, #0f0f10 0%, #27272a 100%);
-}
-
-.projectThumbForest {
-  background: linear-gradient(135deg, #0b1f11 0%, #3f6f1d 100%);
-}
-
-.projectThumbOrange {
-  background: linear-gradient(135deg, #f6d38f 0%, #ea9a2b 100%);
-  color: #3b1f00;
-}
-
-.projectThumbBlack {
-  background: linear-gradient(135deg, #080808 0%, #1f1f1f 100%);
+.projectThumbImg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .projectThumbText {
+  position: relative;
+  z-index: 2;
   max-width: 80%;
-  opacity: 0.9;
+  opacity: 0.95;
   line-height: 1.35;
+}
+
+.projectThumbDefault {
+  background: linear-gradient(135deg, #94a3b8 0%, #475569 100%);
 }
 
 .projectTags {
@@ -112,12 +107,31 @@
   display: flex;
   gap: 22px;
   flex-wrap: wrap;
+  margin-top: auto;
+  align-items: center;
+}
+
+.projectWarning {
+  display: inline-flex;
+  align-items: center;
+  min-width: 28px;
+  min-height: 28px;
+  border-radius: 8px;
+  background: #fef3c7;
+  color: #7c7c7c;
+  border: 1px solid #fde68a;
+  font-size: 1rem;
+  cursor: help;
+  padding: 0 8px;
+  position: absolute;
+  right: 16px;
+  top: calc(186px + 12px);
 }
 
 .projectLinks a {
   color: #0f172a;
-  font-family: var(--font-syne), sans-serif;
+  font-family: var(--sans-serif), sans-serif;
   font-size: 0.95rem;
-  font-weight: 800;
+  font-weight: 650;
   text-decoration: underline;
 }
