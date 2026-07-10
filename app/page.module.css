@@ -24,6 +24,15 @@ html {
   width: 90%;
   max-width: 1120px;
   margin: 104px auto 0;
+  scroll-margin-top: 96px;
+}
+
+#about {
+  scroll-margin-top: 0;
+}
+
+#contact {
+  scroll-margin-top: 96px;
 }
 
 .sectionLabel {
