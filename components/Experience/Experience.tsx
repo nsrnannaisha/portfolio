@@ -4,8 +4,8 @@ import pageStyles from "../../app/page.module.css";
 const experiences = [
   {
     date: "January 2024 - May 2024",
-    title: "Bimbingan Belajar Gratis (BETIS) Fasilkom UI",
-    role: "Event Staff",
+    title: "Event Staff",
+    role: "Bimbingan Belajar Gratis (BETIS) Fasilkom UI",
     desc: "Assist the lecturer during weekly class sessions, act as the primary liaison between lecturers and students, support the grading of 50+ assignments, and assist in the coordination of two course-related events.",
   },
   {

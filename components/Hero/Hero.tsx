@@ -29,7 +29,7 @@ export default function Hero() {
     <section id="about" className={styles.hero}>
       <div className={styles.heroCopy}>
         <h1 className={styles.name}>Nisrina Annaisha Sarnadi</h1>
-        <p className={styles.subtitle}>Computer Science Undergraduate Student</p>
+        <p className={styles.subtitle}>Undergraduate Computer Science Student</p>
         <p className={styles.description}>
           Nisrina is an undergraduate Computer Science student with a strong enthusiasm for learning and
           the ability to work independently and in a team. Commit to develop skills through internships,

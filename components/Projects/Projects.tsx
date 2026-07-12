@@ -17,7 +17,7 @@ const projects = [
     tags: ["Figma", "Web App Prototype"],
     desc: "Prototype design and website for showcasing my projects and skills.",
     img: portfolioImg,
-    links: [{ label: "Prototyple", href: "https://www.figma.com/proto/QJAZfh4uzFnTF2GhKeVANG/Portfolio?node-id=74-44&t=Y7h8HalyXD8ebFf6-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=74%3A44&show-proto-sidebar=1" }],
+    links: [{ label: "Prototype", href: "https://www.figma.com/proto/QJAZfh4uzFnTF2GhKeVANG/Portfolio?node-id=74-44&t=Y7h8HalyXD8ebFf6-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=74%3A44&show-proto-sidebar=1" }],
   },
   {
     title: "Kalkulator Yudisium (KAYU)",
